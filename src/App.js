@@ -10,6 +10,7 @@ const socket = io(process.env.WEBSOCKET_CONNECT ?? 'https://fifo-server.herokuap
 function App() {
 	const [status, setStatus] = useState('');
 	const [count, setCount] = useState();
+	// eslint-disable-next-line no-new-object
 	const user = new Object();
 	user.localization = 16;
 	user.service = 15;
